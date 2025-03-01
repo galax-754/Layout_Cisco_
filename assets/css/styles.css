@@ -1,0 +1,93 @@
+/*COLORES*/
+:root{
+--color-bordes:  rgb(196, 214, 214);
+--color-header: #0a3349;
+
+}
+
+  
+body {
+    display: flex;
+    justify-content: center;  /* Centrar horizontalmente */
+    align-items: center;      /* Centrar verticalmente */
+    height: 100vh;            /* Altura completa de la ventana */
+    margin: 0;                /* Eliminar márgenes por defecto */
+    background-color: #f4f4f4; /* Solo para visualización */
+}
+
+/*TARJETA GENERAL*/
+
+.tarjetas_tarjeta{
+    width: 33rem;
+    height: 13rem;
+
+    display: flex;
+    justify-content: space-between;
+
+
+    box-shadow: 0px 13px 48px 0 rgba(0, 0, 0, 15%);
+    border-radius: 1rem;
+
+}
+
+
+/*LADO derecho*/
+.tarjeta__lado-derecho{  
+    width: 60%;
+}
+
+.lado-derecho__header{
+    position: relative;
+    width: 20rem;
+    height: auto;
+    right: 2rem;
+    top: 0.8rem;
+    color: var(--color-header);
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lado-derecho__info{
+    padding-top: 1.5rem;
+    font-family:  "Inter", sans-serif;
+    color: var(--color-header);
+
+}
+
+.lado-derecho__icono{
+    max-width: 3rem;
+    max-height: 3rem;
+    top: 0.8rem;
+    right: 2rem;    
+    position: relative;
+
+}
+
+
+
+/*LADO izquierdo*/
+.tarjeta__lado-izquierdo{
+
+    width: 55%;
+    padding: 1rem 0rem 0rem 2rem;
+
+}
+
+.lado-izquierdo__perfil{
+    max-width: 10rem;
+    max-height: 10rem;
+    border: solid 6px;
+    border-radius: 6rem;
+    color: var(--color-bordes);
+    
+}
+
+.perfil__foto{
+    border-radius: 6rem;
+
+}
+ 
+.icono__icono{
+    position: relative;
+    left: 18rem
+}
