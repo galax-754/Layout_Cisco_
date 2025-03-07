@@ -1,93 +1,182 @@
 /*COLORES*/
 :root{
---color-bordes:  rgb(196, 214, 214);
---color-header: #0a3349;
+--color-presentacion: #19294D;
+--color-titulos: #1B1C1D;
+--color-subtitulos: #213A57;
+--color-descripciones: #281E1D;
+--color-resaltados:#0B7BD6 ;
+--color-footer: #F4F5F6; 
+--color-texto_footer: ;
+--color-general: white;
+--color-botones: #0980DA;
  
 }
 
-  
-body {
+/*ENCABEZADO*/
+.layout__encabezado{
+    width: 100%;  /* Todo el ancho disponible */
+    height: 194px; /* Altura fija */
+}
+
+/*ENCABEZADO ARRIBA*/
+.encabezado__arriba{
+    height: 3.2rem;
     display: flex;
-    justify-content: center;  /* Centrar horizontalmente */
-    align-items: center;      /* Centrar verticalmente */
-    height: 100vh;            /* Altura completa de la ventana */
-    margin: 0;                /* Eliminar márgenes por defecto */
-    background-color: #f4f4f4; /* Solo para visualización */
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--color-footer);
 }
 
-/*TARJETA GENERAL*/
-
-.tarjetas_tarjeta{
-    width: 33rem;
-    height: 13rem;
-
+.arriba__texto{
+    position: relative; /*Necesario para efecto hover con linea*/
+    font-family: "Inter", sans-serif;
+    font-size: small;
+    padding: 0rem 1rem 0rem 1rem;
     display: flex;
-    justify-content: space-between;
-
-
-    box-shadow: 0px 13px 48px 0 rgba(0, 0, 0, 15%);
-    border-radius: 1rem;
-
+    flex-direction: row-reverse;
 }
 
-
-/*LADO derecho*/
-.tarjeta__lado-derecho{  
-    width: 60%;
-}
-
-.lado-derecho__header{
+.texto__login, .texto__enus{
     position: relative;
-    width: 20rem;
-    height: auto;
-    right: 2rem;
-    top: 0.8rem;
-    color: var(--color-header);
-    font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 0.4rem;
 }
 
-.lado-derecho__info{
-    padding-top: 1.5rem;
-    font-family:  "Inter", sans-serif;
-    color: var(--color-header);
-
-}
-
-.lado-derecho__icono{
-    max-width: 3rem;
-    max-height: 3rem;
-    top: 0.8rem;
-    right: 2rem;    
+.texto__icono{
+    align-items: center;
     position: relative;
-
+    height: 1rem;
+    width: 1rem;
+    margin: 0.5rem;
 }
 
 
 
-/*LADO izquierdo*/
-.tarjeta__lado-izquierdo{
 
-    width: 55%;
-    padding: 1rem 0rem 0rem 2rem;
+
+/*ENCABEZADO ARRIBA EFECTOS HOVER*/
+.arriba__texto:hover {
+    text-decoration: underline;
+}
+
+/*ENCABEZADO EN MEDIO*/
+.encabezado__menu, .menu__navegacion {
+    height: 90px;
 
 }
 
-.lado-izquierdo__perfil{
-    max-width: 10rem;
-    max-height: 10rem;
-    border: solid 6px;
-    border-radius: 6rem;
-    color: var(--color-bordes);
+.menu__navegacion {
+    display: flex;   /* para distribuir los elementos */
+    flex-direction: row;
+    padding: 1rem;   /* Espaciado alrededor de los elementos */
+}
+
+.navegacion__logo {
+    padding-right: 2rem;
+    padding-left: 4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 1rem;
+}
+
+.navegacion__texto {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;  /* Centra todo el contenido verticalmente */
+
+    flex: 1;  /* Esto permite que el contenedor tome el espacio disponible */
+}
+
+.texto__menu {
+    font-family: "Inter", sans-serif;
+    margin: 1rem;
+    display: flex;  /* Asegura que los elementos dentro del div estén en fila */
+    align-items: center;  /* Centra el texto y el icono verticalmente */
     
 }
 
-.perfil__foto{
-    border-radius: 6rem;
+.texto__menu.menu__trials,
+.texto__menu.menu__search {
+    margin-left: auto;  /* Empuja estos dos elementos a la derecha */
+    
+}
 
+.texto__menu.menu__search {
+    margin-left: 0.5rem;  /* Ajusta el margen izquierdo de Search */
 }
- 
-.icono__icono{
+
+.menu__icono {
+    margin-left: 0.5rem;  /* Agrega un espacio entre el texto de search y el logo */
+    width: 1rem;
+    height: 1rem;
+}
+
+/*Boton trials and demos*/
+.texto__menu.menu__trials{
+    height: 2rem;
+    width: 10rem;
+    border-radius: 1rem;
+    border: 2px solid;
+    color: var(--color-botones);
+}
+
+.menu__trials{
+    margin-left: 1rem;
+}
+
+/*ENCABEZADO MEDIO EFECTOS HOVER*/
+
+.texto__menu.menu__trials:hover {
+    color: var(--color-presentacion);
+}
+
+.texto__menu:not(.texto__menu.menu__trials):hover {
+    text-decoration: underline; /* Efecto hover solo en los elementos que no tengan la clase*/
+}
+
+/*ENCABEZADO ABAJO*/
+.encabezado__abajo{
+    height: 100px;
+    background-color: var(--color-footer);
+    display: flex; 
+    align-items: center;  /* Centra verticalmente */
+    justify-content: center;  /* Centra horizontalmente */
+    gap: 1rem; /* Espaciado entre logo y textos */
+}
+
+.abajo__logo{
     position: relative;
-    left: 18rem
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    width: 10rem;
+    bottom:0.4rem;
 }
+
+
+.textos__titulo, .textos__subtitulo{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+}
+
+.textos__subtitulo{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--color-subtitulos);
+}
+
+.subtitulo__link{
+    font-weight: bold;
+}
+
+.resaltado{
+    color: var(--color-resaltados);
+}
+
+/*ENCABEZADO ABAJO EFECTOS HOVER*/
+.subtitulo__link:hover{
+    color: var(--color-resaltados);
+    text-decoration:underline;
+    transition: all 300ms ease-in-out;
+}
+
+
