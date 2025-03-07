@@ -9,160 +9,386 @@
 
  <!--TODA MI PAGINA-->
     <div class="layout">
-    
-        <!--MENU en encabezado-->
-        <section class="layout__menu">
 
-            <header class="menu__navegacion">
-            <!--Dentro de header tenemos logo, texto, icono de buscar-->
-                <div class="navegacion__logo">
-                     <img class= "navegacion__img" src="/assets/img/cisco.png" >
+        <!--ENCABEZADO-->
+        <header class="layout__encabezado">
+
+            <!--ARRIBA ENCABEZADO-->
+            <section class="encabezado__arriba">
+
+                <div class="arriba__howTB">
+                    <a href="#">How to buy</a>
+                    
                 </div>
 
-               <div class="navegacion__texto">
-                    <a href="#"class="texto__menu">Productos y servicios</a>
-                    <a href="#" class="texto__menu">Soluciones</a>
-                    <a href="#"class="texto__menu">Soporte</a>
-                    <a href="#"class="texto__menu">Aprendizaje</a>
-               </div>
+                <div class="arriba__Partners">
+                    <a href="#">Partners</a>
+                </div>
 
-               <div class="navegacion__buscar">
-                    <a href="#"class="texto__menu">Explorar Cisco</a>
+                <div class="arriba__login">
+                    <a href="#">Log in</a>
+                    <img class="login__icono" src="/assets/img/usuario.png">
+                </div>
 
-                    <div class="buscar__icono">
-                        <img class="buscar__icono" src="#">
-                        <a href="#"class="buscar__menu">Buscar</a>
-                    </div>
+                <div class="arriba__enus">
+                    <a href="#">EN US</a>
+                    <img class="login__icono" src="/assets/img/globo.png">
+                </div>
+
+            </section>
+           
+            <!--EN MEDIO - MENU en encabezado-->
+            <section class="encabezado__menu">
+
+                <div class="menu__navegacion">
                     
-               </div>
+                    <div class="navegacion__logo">
+                        <img class= "navegacion__img" src="/assets/img/cisco.png" >
+                    </div>
 
-            </header>
+                    <div class="navegacion__texto">
 
-        </section>
+                        <div class="texto__menu">
+                            <a href="#"class="menu_productos">Products and Services</a>
+                        </div>
 
-        <!--Contenido de en medio-->
+                        <div class="texto__menu">
+                            <a href="#" class="menu__soluciones">Solutions</a>
+                        </div>
+
+                        <div class="texto__menu">
+                            <a href="#"class="menu__soporte">Support</a>
+                        </div>
+
+                        <div class="texto__menu">
+                            <a href="#"class="menu__aprendizaje">Learn</a>
+                        </div>
+
+                        <div class="texto__menu">
+                            <a href="#" class="menu__trials">Trials and demos</a>
+                        </div>
+
+                        <div class="texto__menu">
+                            <a href="#" class="menu__trials">Search</a>
+                            <img class="menu__icono" src="assets/img/buscar.png">
+                        </div>
+                       
+                    </div>
+
+                
+                </div>
+
+            </section>
+
+            <!--ABAJO ENCABEZADO-->
+            <section class="encabezado__abajo">
+                <div class="abajo__logo">
+                    <img class="logo__ciscolive" src="assets/img/cisco-live-logo.png">
+                </div>
+
+                <div class="abajo__titulo">
+                    <h3 class="titulo__unete"> Join us in San Diego for the tech event of the year</h3>
+                </div>
+
+                <div class="abajo__subtitulo">
+                    <h4 class="subtitulo__evento">Event | June 8 - 12, 2025</h4>
+                    <a href="#">Register now > </a>
+
+                </div>
+            </section>
+
+        </header>
+
+        <!--Contenido con fondo de imagen-->
         <section class="layout__content">
 
-            <article class="content__presentacion">
+            <div class="content__fondo">
+                <img class="fondo__azul" src="assets/img/cisco-ai-1024x439.jpeg">
+            </div>
+            
+            <div class="content__presentacion">
+                <h1 class="presentacion__titulo">Bringing AI to the Enterprise</h1>
+                <p class="presentacion__descripcion">Cisco and NVIDIA expand partnership 
+                    to accelerate AI adoption in the enterprise</p>
                
-                <div class="presentacion__imagen">
-                    <img class="imagen1" src="/assets/img/cisco-ai-1024x439.jpeg">
+                <div class="presentacion__boton">
+                    <a href="#" >Read press release</a>
                 </div>
+
+                <a href="#"> Read blog > </a>
+            </div>
+
+            <div class="content__logos">
+                <img class="logo__imagen" src="assets/img/Cisco_nvidia.png">
+            </div>
+
+            <div class="content__menu2">
                 
-                <div class="presentacion__texto">
-                    <h1 class="texto__titulo">Haga de la IA un éxito</h1>
-                    <p class="texto__subtitulo">Convierte en realidad las promesas de la inteligencia artificial con Cisco.</p>
-                    <button class="texto__btn">Descubra Cisco AI</button>
-                </div>
-                <!--Segundo menu de navegacion dentro color azul-->
-                <div class="content__menu2">
-
-                    <div class="menu2__icono">
-                        <img class="icono__descargas" src="#">
-                        <a href="#" class="icono__nombre">Descargas</a> 
-                    </div>
-
-                    <div class="menu2__icono">
-                        <img class="icono__certificaciones" src="#">
-                        <a href="#" class="icono__nombre">Certificaciones</a>
-                    </div>
-
-                    <div class="menu2__icono">
-                        <img class="icono__Cisco-Validated" src="#">
-                        <a href="#" class="icono__nombre">Cisco Validated</a>
-                    </div>
-
-                    <div class="menu2__icono">
-                        <img class="icono__capacitacion" src="#">
-                        <a href="#" class="icono__nombre">Capacitación</a>
-                    </div>
-
-                    <div class="menu2__icono">
-                        <img class="icono__Comunidad" src="#">
-                        <a href="#" class="icono__nombre">Comunidad</a>
-                    </div>
-
-                    <div class="menu2__icono">
-                        <img class="icono__Soporte" src="#">
-                        <a href="#" class="icono__nombre">Soporte</a>
-                    </div>
-
+                <div class="menu2__icono">
+                    <img class="icono__descargas" src="assets/img/descargar.png">
+                    <a href="#" class="icono__nombre">Downloads</a> 
                 </div>
 
-            </article>
-
-            <article class="content__soluciones">
-                <div class="soluciones__texto">
-                    <h1 class="texto__titulo">¿Desafios dificiles?</h1>
-                    <p class="texto__subtitlo">Combinamos los productos y servicios ideales en soluciones que abordan los desafios
-                        específicos de su industria, negocio o tecnología
-                    </p>
+                <div class="menu2__icono">
+                    <img class="icono__certificaciones" src="assets/img/certificacion.png">
+                    <a href="#" class="icono__nombre">Certifications</a>
                 </div>
 
-                <div class="soluciones__izquierda">
-                    <button class="izquierda__btn">Observabilidad</button>
-                    <h2 class="izquierda__titulo">Splunk AppDynamics</h2>
-                    <p class="izquierda__descripcion">Optimice el rendimiento de aplicaciones hibridas
-                        y locales con la observabilidad de pila completa vinculada al rendimiento empresarial.
-                    </p>
+                <div class="menu2__icono">
+                    <img class="icono__Cisco-Validated" src="assets/img/documento.png">
+                    <a href="#" class="icono__nombre">Cisco Validated</a>
                 </div>
 
-                <div class="soluciones__derecha">
-                    <h3 class="derecha__titulo">Business Health</h3>
-                    <img class="derecha__imagen" src="#">
-                    <img class="derecha__imagen" src="#">
-                    <img class="derecha__imagen" src="#">
+                <div class="menu2__icono">
+                    <img class="icono__capacitacion" src="assets/img/ensenando.png">
+                    <a href="#" class="icono__nombre">Training</a>
                 </div>
 
-            </article>
+                <div class="menu2__icono">
+                    <img class="icono__Comunidad" src="assets/img/red-de-datos.png">
+                    <a href="#" class="icono__nombre">Community</a>
+                </div>
 
-            <article class="content_articulos">
-
-                <article class="articulos__articulo"></article>
-
-                <article class="articulos__articulo"></article>
-
-                <article class="articulos__articulo"></article>
-
-                <article class="articulos__articulo"></article>
-
-                <article class="articulos__articulo"></article>
-
-                <article class="articulos__articulo"></article>
-
-                <article class="articulos__articulo"></article>
-
-                <article class="articulos__articulo"></article>
-
-            </article>
+                <div class="menu2__icono">
+                    <img class="icono__Soporte" src="assets/img/centro-de-llamadas.png">
+                    <a href="#" class="icono__nombre">Support</a>
+                </div>
+            </div>
 
         </section>
+
+        <!--Contenido de PRODUCTOS-->
+        <section class="layout__productos">
+            <div class="productos__titulo">
+                <h1 class="titulo__presentacion">Latest products and innovation across Cisco</h1>
+            </div>
+
+            <article class="productos__producto">
+                
+                <div class="producto__imagen">
+                    <img class="imagen__img" src="assets/img/imagen_producto_1.png">
+                </div>
+
+                <div class="producto__info">
+                    <h2 class="info__titulo">Cisco 8000 Series Routers</h2>
+                    <p class="info__descripcion">Power your metro, core, and data center networks
+                         with Silicon One-based platforms built for the speed and scale of AI.</p>
+                    <a href="#" class="info__link">Explore Cisco 8000 Series</a>
+                </div>
+
+            </article>
+
+            <article class="productos__producto">
+                <div class="producto__imagen">
+                    <img class="imagen__img" src="assets/img/imagen_producto_2.png">
+                </div>
+
+                <div class="producto__info">
+                    <h2 class="info__titulo">Introducing Cisco AI defense</h2>
+                    <p class="info__descripcion">Cisco AI Defense safeguards the development and usage of AI applications 
+                        so that enterprises can advance their AI initiatives with confidence.</p>
+                    <a href="#" class="info__link">Explore AI Defense</a>
+                </div>
+
+            </article>
+
+            <article class="productos__producto">
+                <div class="producto__img">
+                    <img class="imagen__ruter" src="assets/img/imagen_producto_3.png">
+                </div>
+
+                <div class="producto__info">
+                    <h2 class="info__titulo">Cisco Nexus Hyperfabric</h2>
+                    <p class="info__descripcion">Simply design, build, and manage network fabrics anywhere.</p>
+                    <a href="#" class="info__link">Explore Cisco Nexus Hyperfabric</a>
+                </div>
+
+            </article>
+        </section>
+
+        <!-- Nuestra Tecnologia-->
+         <section class="layout__tecnologias">
+            
+            <div class="tecnologias__tecnologia">
+                <img class="tecnologia__imagen" src="assets/img/Networking.png">
+                <h3 class="tecnologia__titulo">Networking</h3>
+            </div>
+
+            <div class="tecnologias__tecnologia">
+                <img class="tecnologia__imagen" src="assets/img/Observability.png">
+                <h3 class="tecnologia__titulo">Observability</h3>
+            </div>
+
+            <div class="tecnologias__tecnologia">
+                <img class="tecnologia__imagen" src="assets/img/Security.png">
+                <h3 class="tecnologia__titulo">Security</h3>
+            </div>
+
+            <div class="tecnologias__tecnologia">
+                <img class="tecnologia__imagen" src="assets/img/Collaboration.png">
+                <h3 class="tecnologia__titulo">Collaboration</h3>
+            </div>
+
+            <div class="tecnologias__tecnologia">
+                <img class="tecnologia__imagen" src="assets/img/Computing.png">
+                <h3 class="tecnologia__titulo">Computing</h3>
+            </div>
+            
+            <div class="tecnologias__tecnologia">
+                <img class="tecnologia__imagen" src="assets/img/AI.png">
+                <h3 class="tecnologia__titulo">AI</h3>
+            </div>
+
+
+
+
+
+         </section>
+
+         <!--Articulos-->
+         <section class="layout__articulos">
+         
+            <div class="articulos__articulo">
+                
+                    <div class="articulo__content">
+                        <h2 class="content__titulo">Secure the AI-scale data center</h2>
+                        <p class="content__descripcion">Segment your workloads, protect against vulnerabilities, and address your fundamental cybersecurity 
+                            challenges with Cisco Hypershield, a groundbreaking, new AI-native 
+                            architecture.</p>
+                    </div>
+
+                    <div class="articulo__boton">
+                        <a href="#" clarr="boton__titulo">Explore Cisco Hypersheid</a>
+                    </div>
+
+                    <div class="articulo__imagen">
+                        <img class="imagen__ima" src="">
+                    </div>
+                
+            </div>
+
+            <div class="articulos__articulo">
+                
+                <div class="articulo__content">
+                    <h2 class="content__titulo">Intelligent. Simple. Resilient. Get AI-ready connectivity</h2>
+                    <p class="content__descripcion">Monetize your network and service capabilities with an 
+                        architecture built for smart, seamless delivery. Cut complexity by converging network layers and services.
+                        Assure user experiences with AI-powered automation, observability, and security.</p>
+                </div>
+
+                <div class="articulo__boton">
+                    <a href="#" clarr="boton__titulo">Explore Agile Services Networking</a>
+                </div>
+
+                <div class="articulo__imagen">
+                    <img class="imagen__ima" src="">
+                </div>
+            
+             </div>
+
+             <div class="articulos__articulo">
+                
+            <div class="articulo__content">
+                <h2 class="content__titulo">Watch the Cisco AI Defense broadcast</h2>
+                <p class="content__descripcion">Join our panel discussion on AI security and an overview of AI Defense.</p>
+            </div>
+
+            <div class="articulo__boton">
+                <a href="#" clarr="boton__titulo">Explore Cisco AI Defense</a>
+            </div>
+
+            <div class="articulo__imagen">
+                <img class="imagen__ima" src="">
+            </div>
+        
+            </div>
+
+         </section>
+
+         <!--Sobre Cisco-->
+         <section class="layout__about">
+
+            <div class="about__introduccion">
+                <h2 class="introduccion__titulo">Inside Cisco</h2>
+                <a href="#" class="introduccion__news"> <span class="resaltado">More news > </span></a>
+                <a href="#" class="introduccion__events"> <span class="resaltado">More events > </span></a>
+            </div>
+           
+
+            <article class="about__articulof">
+                <h4 class="articulof__titulo">Press release</h4>
+                <p class="articulof__descripcion"> Cisco showcases simplicity, security and 
+                    AI readiness at Cisco Live Amsterdam</p>
+                <a href="#" class="articulof__link"><span class="resaltado">Read press release </span> </a>
+            </article>
+
+            <article class="about__articulof">
+                <h4 class="articulof__titulo">Partner</h4>
+                <p class="articulof__descripcion"> Cisco unveils new Cisco 360 Partner Program</p>
+                <a href="#" class="articulof__link"><span class="resaltado">Get more details > </span> </a>
+            </article>
+
+            <article class="about__articulof">
+                <h4 class="articulof__titulo">Keynote</h4>
+                <p class="articulof__descripcion"> Cisco executives address how to connect and 
+                    protect organizations in the AI era</p>
+                <a href="#" class="articulof__link"><span class="resaltado">Watch Keynote > </span> </a>
+            </article>
+
+            <article class="about__articulof">
+                <h4 class="articulof__titulo">Analyst report</h4>
+                <p class="articulof__descripcion"> The business case for IT/OT Collaboration 
+                    in modernizing industrial networks
+                </p>
+                <a href="#" class="articulof__link"><span class="resaltado">Get report ></span> </a>
+            </article>
+
+            <article class="about__articulof">
+                <h4 class="articulof__titulo">Event</h4>
+                <p class="articulof__descripcion">Cisco U. Spotlight 2025. Get ready to:
+                    Learn. Connect. Innovate.
+                </p>
+                <a href="#" class="articulof__link">  <span class="resaltado">Register now > </span> </a>
+            </article>
+
+            <article class="about__articulof">
+                <h4 class="articulof__titulo">Blog</h4>
+                <p class="articulof__descripcion"> Cisco wins Industrial loT Company of the Year 2025</p>
+                <a href="#" class="articulof__link"> <span class="resaltado">Read more ></span></a>
+            </article>
+
+         </section>
+
 
         <!--Contenido del pie de pagina-->
         <section class="footer">
+
             <div class="footer__header">
-                <a class="header__textof" href = "#">Acerca de Cisco</a>
-                <a class="header__textof" href = "#">Contacte a Cisco</a>
-                <a class="header__textof" href = "#">Carreras profesionales</a>
-                <a class="header__textof" href = "#">Contactese con un partner</a>
+                <a class="header__textof" href = "#">About Cisco</a>
+                <a class="header__textof" href = "#">Contact us</a>
+                <a class="header__textof" href = "#">Careers</a>
+                <a class="header__textof" href = "#">Connect with a partner</a>
             </div>
 
             <div class="footer__iconos">
-                <img class="iconos__icono" src="#">
-                <img class="iconos__icono" src="#">
-                <img class="iconos__icono" src="#">
-                <img class="iconos__icono" src="#">
+                <img class="iconos__icono" src="assets/img/facebook.png">
+                <img class="iconos__icono" src="assets/img/twitter.png">
+                <img class="iconos__icono" src="assets/img/linkedin (2).png">
+                <img class="iconos__icono" src="assets/img/youtube.png">
+                <img class="iconos__icono" src="assets/img/instagram.png">
             </div>
 
             <div class="footer__abajo">
-                <a class="abajo__textof" href = "#">Comentarios</a>
-                <a class="abajo__textof" href = "#">Ayuda</a>
-                <a class="abajo__textof" href = "#">Terminos y condiciones</a>
-                <a class="abajo__textof" href = "#">Declaracion de privacidad</a>
+                <a class="abajo__textof" href = "#">Feedback</a>
+                <a class="abajo__textof" href = "#">Help</a>
+                <a class="abajo__textof" href = "#">Terms & Conditions</a>
+                <a class="abajo__textof" href = "#">Privacy</a>
                 <a class="abajo__textof" href = "#">Cookies</a>
-                <a class="abajo__textof" href = "#">Marcas registradas</a>
-                <a class="abajo__textof" href = "#">Transparencia en la cadena de suministro</a>
-                <a class="abajo__textof" href = "#">Mapa del sitio</a>
+                <a class="abajo__textof" href = "#">Accessibility</a>
+                <a class="abajo__textof" href = "#">Trademarks</a>
+                <a class="abajo__textof" href = "#">Supply Chain Transparency</a>
+                <a class="abajo__textof" href = "#">Newsroom</a>
+                <a class="abajo__textof" href = "#">Sitemap</a>
                 <p class="abajo__textof"> @2025 Cisco Systems, Inc</p> 
             </div>
 
