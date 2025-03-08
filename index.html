@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout de Cisco</title>
+    <!--Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <!--Hojas de estilos-->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
 
@@ -110,19 +116,22 @@
         <section class="layout__content">
 
             <div class="content__fondo">
-               <!-- <img class="fondo__azul" src="assets/img/cisco-ai-1024x439.jpeg">-->
+               <img class="fondo__azul" src="assets/img/cisco-ai-1024x439.jpeg">
             </div>
             
             <div class="content__presentacion">
-                <h1 class="presentacion__titulo">Bringing AI to the Enterprise</h1>
+                <h1 class="presentacion__titulo">Bringing AI to the <br> Enterprise</h1>
                 <p class="presentacion__descripcion">Cisco and NVIDIA expand partnership 
                     to accelerate AI adoption in the enterprise</p>
+                
+                    <div class="presentacion__elemntosfila">
+                        <div class="elemntosfila__boton">
+                            <a href="#" class="boton__texto" >Read press release</a>
+                        </div>
+        
+                        <a href="#" class="elemntosfila__link"> Read blog > </a>
+                    </div>
                
-                <div class="presentacion__boton">
-                    <a href="#" >Read press release</a>
-                </div>
-
-                <a href="#"> Read blog > </a>
             </div>
 
             <div class="content__logos">
@@ -133,7 +142,7 @@
                 
                 <div class="menu2__icono">
                     <img class="icono__descargas" src="assets/img/descargar.png">
-                    <a href="#" class="icono__nombre">Downloads</a> 
+                    <a href="#" class="icono__nombre icono__nombre--Descargas">Downloads</a> 
                 </div>
 
                 <div class="menu2__icono">
@@ -166,51 +175,55 @@
 
         <!--Contenido de PRODUCTOS-->
         <section class="layout__productos">
+
             <div class="productos__titulo">
-                <h1 class="titulo__presentacion">Latest products and innovation across Cisco</h1>
+                <h2 class="titulo__presentacion">Latest products and innovation across Cisco</h2>
             </div>
 
-            <article class="productos__producto">
+            <section class="producto__producto">
+                <article class="productos__producto">
                 
-                <div class="producto__imagen">
-                    <img class="imagen__img" src="assets/img/imagen_producto_1.png">
-                </div>
+                    <div class="producto__imagen">
+                        <img class="imagen__img" src="assets/img/imagen_producto_1.png">
+                    </div>
+    
+                    <div class="producto__info">
+                        <h2 class="info__titulo">Cisco 8000 Series Routers</h2>
+                        <p class="info__descripcion">Power your metro, core, and data center <br>networks
+                             with Silicon One-based platforms built <br>for the speed and scale of AI.</p>
+                        <a href="#" class="info__link"><span class="resaltado">Explore Cisco 8000 Series</span></a>
+                    </div>
+    
+                </article>
+    
+                <article class="productos__producto">
+                    <div class="producto__imagen">
+                        <img class="imagen__img" src="assets/img/imagen_producto_2.png">
+                    </div>
+    
+                    <div class="producto__info">
+                        <h2 class="info__titulo">Introducing Cisco AI defense</h2>
+                        <p class="info__descripcion">Cisco AI Defense safeguards the development <br>and usage of AI applications 
+                            so that enterprises<br> can advance their AI initiatives with confidence.</p>
+                        <a href="#" class="info__link"><span class="resaltado">Explore AI Defense</span></a>
+                    </div>
+    
+                </article>
+    
+                <article class="productos__producto">
+                    <div class="producto__img">
+                        <img class="imagen__ruter" src="assets/img/imagen_producto_3.png">
+                    </div>
+    
+                    <div class="producto__info">
+                        <h2 class="info__titulo">Cisco Nexus Hyperfabric</h2>
+                        <p class="info__descripcion">Simply design, build, and manage network <br>fabrics anywhere.</p>
+                        <a href="#" class="info__link"> <span class="resaltado">Explore Cisco Nexus Hyperfabric</span></a>
+                    </div>
+    
+                </article>
+            </section>
 
-                <div class="producto__info">
-                    <h2 class="info__titulo">Cisco 8000 Series Routers</h2>
-                    <p class="info__descripcion">Power your metro, core, and data center networks
-                         with Silicon One-based platforms built for the speed and scale of AI.</p>
-                    <a href="#" class="info__link">Explore Cisco 8000 Series</a>
-                </div>
-
-            </article>
-
-            <article class="productos__producto">
-                <div class="producto__imagen">
-                    <img class="imagen__img" src="assets/img/imagen_producto_2.png">
-                </div>
-
-                <div class="producto__info">
-                    <h2 class="info__titulo">Introducing Cisco AI defense</h2>
-                    <p class="info__descripcion">Cisco AI Defense safeguards the development and usage of AI applications 
-                        so that enterprises can advance their AI initiatives with confidence.</p>
-                    <a href="#" class="info__link">Explore AI Defense</a>
-                </div>
-
-            </article>
-
-            <article class="productos__producto">
-                <div class="producto__img">
-                    <img class="imagen__ruter" src="assets/img/imagen_producto_3.png">
-                </div>
-
-                <div class="producto__info">
-                    <h2 class="info__titulo">Cisco Nexus Hyperfabric</h2>
-                    <p class="info__descripcion">Simply design, build, and manage network fabrics anywhere.</p>
-                    <a href="#" class="info__link">Explore Cisco Nexus Hyperfabric</a>
-                </div>
-
-            </article>
         </section>
 
         <!-- Nuestra Tecnologia-->
