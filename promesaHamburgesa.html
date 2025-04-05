@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos de hamburguesas</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <section class="layout__pedido">
+        <div class="pedido__formulario">
+            <h2 class="formulario__titulo">Agregar ingrediente</h2>
+
+            <div class="formulario__opciones">
+                <input type="text" class="formulario__input" name="ingrediente" required placeholder="Ingrediente"/>
+                
+                <div class="formulario__boton">
+                    <button class="boton__agregar">Agregar</button>
+                </div>
+
+                <div class="formulario__boton">
+                    <button class="boton__completar">Completar pedido</button>
+                </div>
+            </div>
+
+            <p class="formulario__mensaje"></p>
+        </div>
+
+        <div class="pedido__resultado" style="display: none;">
+            <div class="resultado__hamburguesa">
+                <h3 class="hamburguesa__respuesta">Aquí está tu pedido con:</h3>
+                <p class="hamburguesa__ingredientes"></p>
+            </div>
+
+            <div class="resultado__hamburguesa">
+                <img class="resultdo__img" src="/assets/img/hamburguesa.webp">
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/promesas.js"></script>
+</body>
+</html>
